@@ -27,12 +27,12 @@ GFM은 GitHub Flavored Markdown의 약자로 GitHub에 지원되는 Markdown을 
         위의 표는 단순히 헤더와 셀을 분리한 것이고 아래표는 콜론을 이용하여 정렬을 표현한 것이다.
 아래는 위의 코드를 구현하여 나타낸 표이다.
 
-    | Header | Title | Subject |
-    |--------|-------|---------|
-    | story  | Book  | This    |
-    | text1  | text2 | tect3   |
+| Header | Title | Subject |
+|--------|-------|---------|
+| story  | Book  | This    |
+| text1  | text2 | tect3   |
     
     
-    | Header | Title | Subject |
-    | :---   | :---: |    ---: |
-    | left   | center| right   |
+| Header | Title | Subject |
+| :---   | :---: |    ---: |
+| left   | center| right   |
