@@ -73,3 +73,14 @@ ___
 - [X] rendering  
     - [ ] simulation  
 - [ ] upload  
+
+
+___
+### 3. Strikethrough (취소선) 
+- 취소선은 \~ (물결표시)를 이용하여 나타낼 수 있다.
+
+        취소하고 싶은 구나 절 앞뒤로 두개의 물결표시를 사용하여 취소선을 표현할 수 있다.
+        I think I need ~~more~~ practice.
+아래에 취소선의 실행결과를 볼 수 있다.
+
+I think I need ~~more~~ practice.
