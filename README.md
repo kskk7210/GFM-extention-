@@ -17,7 +17,7 @@ GFM은 GitHub Flavored Markdown의 약자로 GitHub에 지원되는 Markdown을 
         | Header | Title | Subject |
         |--------|-------|---------|
         | story  | Book  | This    |
-        | text1  | text2 | tect3   |
+        | text1  | text2 | text3   |
     
     
         | Header | Title | Subject |
@@ -30,9 +30,46 @@ GFM은 GitHub Flavored Markdown의 약자로 GitHub에 지원되는 Markdown을 
 | Header | Title | Subject |
 |--------|-------|---------|
 | story  | Book  | This    |
-| text1  | text2 | tect3   |
+| text1  | text2 | text3   |
     
     
 | Header | Title | Subject |
 | :---   | :---: |    ---: |
 | left   | center| right   |
+
+- 텍스트가 없는 셀이 존재하는 표를 만들어낼 수도 있다.
+
+        | Header | Title | Subject |
+        |--------|-------|---------|
+        | story  | Book  | 
+        | text1  | text2 | text3   |
+        
+ 구현 결과는 아래와 같다.
+        
+| Header | Title | Subject |
+|--------|-------|---------|
+| story  | Book  | 
+| text1  | text2 | text3   |
+
+- 표를 만들 때는 주의해야할 점이 있다.
+        - 꼭 헤더의 수에 맞춰 \|(파이프)와 \- (하이픈)을 이용하여 헤더의 셀을 생성해줘야 한다.
+        - 파이프 안에 텍스트를 쓰지 않아도 그 전에 있는 (바로 위에 있는) 텍스트가 셀 내부에 쓰여있다면 밑에 오는 텍스트도 위의 셀 자리에 맞춰 정렬된다.
+                
+        
+___
+### 2. Task list items (작업 목록 항목)
+- 작업 목록을 만들어 Check list로 사용할 수 있도록 확인란을 만들 수도 있다. 
+- 대괄호 \[\]와 하이픈 \-을 사용하여 생성 가능하다.
+
+        - [X] code
+        - [X] rendering
+                - [ ] simulation
+        - [ ] upload
+        확인란 선택은 대괄호에 공백 대신 가위표 (X)를 추가하면 된다.
+        작업목록 또한 탭이나 공백을 통해 중첩하여 표현하는 것이 가능하다.
+아래는 작업목록에 대한 구현 결과이다.
+
+- [X] code
+- [X] rendering
+        - [ ] simulation
+- [ ] upload
