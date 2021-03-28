@@ -88,10 +88,37 @@ I think I need ~~more~~ practice.
 
 ___
 ### 4. Autolinks (자동 링크)
-- 링크의 경우 \<\> 꺾쇠 괄호를 통해 표시할 수 있지만 www. 다음에 오는 도메인을 자동으로 인식할 수 있으며 이때는 도메인이 유효한 도메인이어야 한다.
+- 링크의 경우 \<\> 꺾쇠 괄호를 통해 표시할 수 있지만 www\. 다음에 오는 도메인을 자동으로 인식할 수 있으며 이때는 도메인이 유효한 도메인이어야 한다.
 
 |               code block | consequnce    |
 |--------------------------|---------------|
 |       <www.naver.com>    |<www.naver.com>|
 |        www.never.com     | www.naver.com |
         
+- 링크에 관하여 살펴야할 점이 있다.  
+        - 유효한 메인 뒤에 공백이 아닌 0이상의 문자가 올 수 있다.  
+        - 링크 뒤에 \., \?, \! 등의 문자가 올 수 있으며 이 문자들이 링크 내부에 포함되더라도 자동 링크의 일부로 보지는 않는다.   
+        - \> 가 링크 뒤에 오면 그 즉시 자동링크가 종료된다.  
+        
+        
+___
+### 5. Disallowed Raw HTML (허용되지 않는 원래의 HTML)  
+- GFM이 HTML 출력을 렌더링 할 때 다음과 같은 태그가 필터링 된다.
+
+        <title>
+        <textarea>
+        <style>
+        <xmp>
+        <iframe>
+        <noembed>
+        <noframes>
+        <script>
+        <plaintext>
+        
+        
+___
+
+#### 참고한 문서 
+<https://github.github.com/gfm/#disallowed-raw-html-extension->  
+<https://www.markdownguide.org/>  
+<https://guides.github.com/features/mastering-markdown/>  
