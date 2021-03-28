@@ -14,6 +14,19 @@ GFM은 GitHub Flavored Markdown의 약자로 GitHub에 지원되는 Markdown을 
 - 표는 행과 열이 있는 데이터 배열로 헤더를 분리해야한다. 헤더는 \- (하이픈)으로 분리되며 표를 이루는 각 셀은 \| (파이프)로 구분된다.
 - \: (콜론)을 통해 각 셀의 텍스트를 좌, 우, 가운데로 정렬할 수 있다.
 
+        | Header | Title | Subject |
+        |--------|-------|---------|
+        | story  | Book  | This    |
+        | text1  | text2 | tect3   |
+    
+    
+        | Header | Title | Subject |
+        | :---   | :---: |    ---: |
+        | left   | center| right   |
+        
+        위의 표는 단순히 헤더와 셀을 분리한 것이고 아래표는 콜론을 이용하여 정렬을 표현한 것이다.
+아래는 위의 코드를 구현하여 나타낸 표이다.
+
     | Header | Title | Subject |
     |--------|-------|---------|
     | story  | Book  | This    |
