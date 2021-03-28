@@ -84,3 +84,14 @@ ___
 아래에 취소선의 실행결과를 볼 수 있다.
 
 I think I need ~~more~~ practice.
+
+
+___
+### 4. Autolinks (자동 링크)
+- 링크의 경우 \<\> 꺾쇠 괄호를 통해 표시할 수 있지만 www. 다음에 오는 도메인을 자동으로 인식할 수 있으며 이때는 도메인이 유효한 도메인이어야 한다.
+
+|               code block | consequnce    |
+|--------------------------|---------------|
+|       <www.naver.com>    |<www.naver.com>|
+|        www.never.com     | www.naver.com |
+        
