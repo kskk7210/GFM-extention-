@@ -63,13 +63,13 @@ ___
 
         - [X] code  
         - [X] rendering  
-                - [ ] simulation  
+            - [ ] simulation  
         - [ ] upload  
-        확인란 선택은 대괄호에 공백 대신 가위표 (X)를 추가하면 된다.
+        확인란 선택은 대괄호에 공백 대신 가위표 [X]를 추가하면 된다.
         작업목록 또한 탭이나 공백을 통해 중첩하여 표현하는 것이 가능하다.
 아래는 작업목록에 대한 구현 결과이다.
 
 - [X] code  
 - [X] rendering  
-        - [ ] simulation  
+    - [ ] simulation  
 - [ ] upload  
